@@ -1,7 +1,4 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -10,11 +7,9 @@
     text-decoration: none;
     list-style: none;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 header .navbar {
     display: flex;
     align-items: center;
@@ -22,15 +17,9 @@ header .navbar {
     position: relative;
     padding: 20px;
     background-image: url(B1.jpg);
-  
- 
-
-
-
     background-position: center;
     background-size: cover;
 }
-
 .navbar h1 {
     font-size: 35px;
     font-weight: 600;
@@ -38,22 +27,18 @@ header .navbar {
     cursor: pointer;
     color: #fff;
 }
-
 .navbar nav {
     display: flex;
     gap: 20px;
     margin-right: 70px;
 }
-
 nav a {
-    /* color:black; */
     font-size: 20px;
     font-weight: 600;
     transition: .5s;
     color: #fff;
     filter: drop-shadow(0px 0px 10px black);
 }
-
 nav a::before {
     content: '';
     position: absolute;
@@ -70,7 +55,6 @@ nav a:hover {
     color: red;
     font-size: 19px;
 }
-
 navigation {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
@@ -114,56 +98,7 @@ navigation li a:hover {
     filter: drop-shadow(0px 0px 7px white);
     color: #000;
 }
-
-/* Media Queries for Responsiveness */
-
-/* For mobile screens (width <= 768px) */
-@media (max-width: 768px) {
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    .navbar h1 {
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
-
-    .navbar nav {
-        flex-direction: column;
-        gap: 10px;
-        margin-right: 0;
-        margin-top: 10px;
-    }
-
-    nav a {
-        font-size: 18px;
-    }
-
-    navigation {
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        justify-content: space-around;
-        padding: 0.6rem 1rem;
-        gap: 1rem;
-    }
-
-    navigation li a {
-        font-size: 1.4rem;
-        padding: 0.7rem;
-    }
-
-    .navbar h1, .navbar nav {
-        text-align: center;
-    }
-}
-
 /* =====================HOME PAGE================= */
-
 .home{
     display: flex;
     position: relative;
@@ -323,78 +258,7 @@ navigation li a:hover {
     color: #fff;
     filter: drop-shadow(0px 0px 10px black);
 }
-/* Media Queries for Responsiveness */
-
-/* For tablet screens (max-width: 1024px) */
-@media (max-width: 1024px) {
-    .about {
-        flex-direction: column;
-        padding: 50px;
-        gap: 30px;
-    }
-
-    .about .image {
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
-
-    .about .image img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .about-content h1 {
-        font-size: 32px;
-    }
-
-    .about-content h2 {
-        font-size: 26px;
-    }
-
-    .about-content p {
-        font-size: 16px;
-        margin-bottom: 150px;
-    }
-
-    
-}
-
-/* For mobile screens (max-width: 768px) */
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        padding: 30px;
-        gap: 30px;
-    }
-
-    .about .image {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .about .image img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .about-content h1 {
-        font-size: 28px;
-    }
-
-    .about-content h2 {
-        font-size: 22px;
-    }
-
-    .about-content p {
-        font-size: 14px;
-    }
-
-}
-
-
   /*==========================ABOUT END=============== */
-
-
 .skills {
   padding: 50px 20px;
   background-image: url('skill.jpg');
@@ -470,55 +334,7 @@ navigation li a:hover {
   color: #41c4d8;
   cursor: pointer;
 }
-
-/* Media Queries for Responsiveness */
-
-/* For tablet screens (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .skills {
-    padding: 40px 15px;
-  }
-
-  .skill-category {
-    width: 280px; 
-    height: 320px; 
-    padding: 20px;
-  }
-
-  .skill-category h3 {
-    font-size: 1.4rem;
-  }
-
-  .skill-category ul li {
-    font-size: 1rem;
-  }
-}
-
-/* For mobile screens (max-width: 768px) */
-@media (max-width: 768px) {
-  .skills {
-    padding: 30px 10px;
-  }
-
-  .skill-category {
-    width: 220px;
-    height: 250px;
-    padding: 15px;
-  }
-
-  .skill-category h3 {
-    font-size: 1.3rem;
-  }
-
-  .skill-category ul li {
-    font-size: 0.9rem;
-  }
-}
-
-
         /* Education */
-  
-
 .Education {
     height: 100vh;
     background-image: url('e1.jpg');
@@ -583,74 +399,7 @@ navigation li a:hover {
     transform: scale(1.2);
     background-color: rgb(3, 3, 87);
 }
-
-/* Media Queries for Responsiveness */
-
-/* For tablet screens (max-width: 1024px) */
-@media (max-width: 1024px) {
-    .title1 {
-        font-size: 2rem;
-        margin-bottom: 40px;
-    }
-
-    .card1 {
-        gap: 30px;
-    }
-
-    .jnv {
-        width: 280px;
-        height: 350px;
-        padding: 15px;
-    }
-
-    .jnv h1 {
-        font-size: 1.3rem;
-    }
-
-    .jnv p {
-        font-size: 0.95rem;
-    }
-
-    .jnv .icon {
-        font-size: 1.8rem;
-    }
-}
-
-/* For mobile screens (max-width: 768px) */
-@media (max-width: 768px) {
-    .title1 {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
-    }
-
-    .card1 {
-        gap: 25px;
-    }
-
-    .jnv {
-        width: 250px;
-        height: 320px;
-        padding: 10px;
-    }
-
-    .jnv h1 {
-        font-size: 1.2rem;
-    }
-
-    .jnv p {
-        font-size: 0.9rem;
-    }
-
-    .jnv .icon {
-        font-size: 1.6rem;
-    }
-}
-
-
-
   /* ===========================SERVICE START=============== */
-  
-
  .service {
   width: 100%;
   height: 100vh;
@@ -659,11 +408,9 @@ navigation li a:hover {
   background-size: cover;
   text-align: center;
 }
-
 .service .title {
   padding-top: 20px;
 }
-
 .service .title h3 {
   font-size: 30px;
   font-weight: 600;
@@ -720,73 +467,6 @@ article p {
   color: #fff;
   filter: drop-shadow(0px 0px 10px black);
 }
-
-/* Media Queries for Responsiveness */
-
-/* For tablet screens (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .service .title h3 {
-      font-size: 24px;
-  }
-
-  .service .card {
-      padding: 30px;
-      gap: 30px;
-  }
-
-  .service .card article {
-      width: 300px;
-      height: 350px;
-      margin: 15px;
-      padding: 15px;
-  }
-
-  article h1 {
-      font-size: 22px;
-  }
-
-  article p {
-      font-size: 13px;
-  }
-
-  article .icon i {
-      font-size: 22px;
-  }
-}
-
-/* For mobile screens (max-width: 768px) */
-@media (max-width: 768px) {
-  .service .title h3 {
-      font-size: 22px;
-  }
-
-  .service .card {
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      margin-top: 10px;
-  }
-
-  .service .card article {
-      width: 320px;
-      height: 460px;
-      margin: 15px 0;
-      padding: 15px;
-  }
-
-  article h1 {
-      font-size: 20px;
-  }
-
-  article p {
-      font-size: 12px;
-  }
-
-  article .icon i {
-      font-size: 20px;
-  }
-}
-
    /* ================SERVICE END================ */
 
    /* ================PROJECT START============ */
@@ -1035,11 +715,8 @@ form button:hover{
 .footer .address h1 {
   font-size: 24px;
 }
-
 .footer .address h2 {
   font-size: 18px;
   margin: 5px 0;
 }
-
-
 /* =======================FOOTER END================= */
